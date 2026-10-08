@@ -1,18 +1,19 @@
-/**
- * Utilidades de validación compartidas por login.html e index.html.
- */
+// validar correo
 function validarCorreo(correo) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i.test(String(correo).trim());
 }
 
+// validar contraseña
 function validarPassword(password) {
   return typeof password === "string" && password.length >= 6;
 }
 
+// validar numero de control
 function validarNumeroControl(numero) {
   return /^\d{6}$/.test(String(numero).trim());
 }
 
+// validar fecha de nacimiento
 function validarFechaNacimiento(fecha) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(String(fecha))) return false;
 
@@ -22,6 +23,7 @@ function validarFechaNacimiento(fecha) {
   return !Number.isNaN(nacimiento.getTime()) && nacimiento <= hoy;
 }
 
+// calcular edad
 function calcularEdad(fecha) {
   const nacimiento = new Date(`${fecha}T00:00:00`);
   const hoy = new Date();

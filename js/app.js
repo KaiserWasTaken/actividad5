@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // validar sesion activa
   const session = localStorage.getItem("aulaControlUser");
   if (!session) {
     window.location.replace("login.html");
@@ -13,11 +14,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.querySelector("#logoutButton").addEventListener("click", () => {
+    // cerrar sesion
     localStorage.removeItem("aulaControlUser");
     window.location.href = "login.html";
   });
 
   document.querySelector("#userForm").addEventListener("submit", (event) => {
+    // validar usuario
     event.preventDefault();
     const name = document.querySelector("#userName");
     const email = document.querySelector("#userEmail");
@@ -40,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.querySelector("#studentForm").addEventListener("submit", (event) => {
+    // validar alumno
     event.preventDefault();
     const name = document.querySelector("#studentName");
     const birthDate = document.querySelector("#birthDate");
