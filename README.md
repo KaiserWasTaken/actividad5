@@ -1,6 +1,6 @@
-# AulaControl
+# Actividad 5 | Proyecto de Login
 
-## Portada
+## Acerca del Proyecto
 
 **AulaControl — sistema de gestión académica**
 Proyecto web de la actividad 5.
@@ -11,7 +11,8 @@ Proyecto web de la actividad 5.
 - Navarro Vazquez Jonathan de Jesus
 - Perez Cruz Maria Isabel
 
-**Descripción breve:** AulaControl permite validar un acceso, entrar a un panel de gestión y capturar usuarios y alumnos desde una interfaz sencilla y responsive. No requiere backend: la sesión se simula con `localStorage`.
+**Descripción breve:** 
+AulaControl permite validar un acceso, entrar a un panel de gestión y capturar usuarios y alumnos desde una interfaz sencilla y responsive. No requiere backend: la sesión se simula con `localStorage`.
 
 ---
 
