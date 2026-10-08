@@ -90,13 +90,13 @@ La edad se simula con los primeros dos dígitos del número de control. Por ejem
 
 Se diseñó una pantalla dividida con identidad visual y un formulario de correo y contraseña. Las validaciones se escribieron en `js/utileria.js` para poder reutilizarlas en otros formularios, y `login.js` se encarga de guardar la sesión y redirigir.
 
-![Pantalla de acceso](img/login.svg)
+![Pantalla de acceso](img/login.png)
 
 ### 2. Sidebar
 
 Se añadió un menú lateral responsive con botón hamburguesa. La opción **Usuarios** usa el componente Collapse de Bootstrap para desplegar **Captura**.
 
-![Sidebar y captura](img/dashboard.svg)
+![Sidebar y captura](img/dashboard.png)
 
 ### 3. Navbar y usuario
 
@@ -106,7 +106,7 @@ El usuario se obtiene del correo usado en login. Se transforma la parte anterior
 
 El formulario de usuario reutiliza las validaciones de la librería. El formulario de alumno acepta únicamente seis dígitos en el número de control y abre un modal con el resultado de la regla de edad. Los únicos botones son los de entrar, abrir/cerrar menús, guardar usuario, registrar alumno, cerrar sesión y aceptar el modal.
 
-![Modal de edad](img/age-modal.svg)
+![Modal de edad](img/age-modal.png)
 
 ## Capturas del flujo completo
 
@@ -114,9 +114,9 @@ Recorrido de la aplicación funcionando, de principio a fin:
 
 | Paso | Captura |
 | --- | --- |
-| 1. Acceso con correo y contraseña | ![Login](img/login.svg) |
-| 2. Panel con sidebar y navbar con el usuario | ![Panel](img/dashboard.svg) |
-| 3. Registro de alumno y modal de edad | ![Modal](img/age-modal.svg) |
+| 1. Acceso con correo y contraseña | ![Login](img/login.png) |
+| 2. Panel con sidebar y navbar con el usuario | ![Panel](img/dashboard.png) |
+| 3. Registro de alumno y modal de edad | ![Modal](img/age-modal.png) |
 
 ## Ejecución y GitHub Pages
 
