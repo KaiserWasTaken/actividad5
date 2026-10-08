@@ -12,3 +12,8 @@ function validarPassword(password) {
 function validarNumeroControl(numero) {
   return /^\d{6}$/.test(String(numero).trim());
 }
+
+function validarEdad(edad) {
+  const valor = Number(edad);
+  return Number.isInteger(valor) && valor >= 1 && valor <= 120;
+}

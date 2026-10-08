@@ -66,14 +66,19 @@
                     <h2>Alumno</h2>
                     <form id="studentForm" novalidate>
                         <div class="row g-3 align-items-end">
-                            <div class="col-md-5"><label class="form-label" for="studentName">Nombre
+                            <div class="col-md-4"><label class="form-label" for="studentName">Nombre
                                     completo</label><input class="form-control" id="studentName" type="text" required>
                                 <div class="invalid-feedback">Escribe el nombre.</div>
                             </div>
-                            <div class="col-md-4"><label class="form-label" for="controlNumber">Número de
+                            <div class="col-md-3"><label class="form-label" for="controlNumber">Número de
                                     control</label><input class="form-control" id="controlNumber" type="text"
                                     inputmode="numeric" maxlength="6" required>
                                 <div class="invalid-feedback">Debe contener 6 dígitos.</div>
+                            </div>
+                            <div class="col-md-2"><label class="form-label" for="studentAge">Edad</label><input
+                                    class="form-control" id="studentAge" type="number" min="1" max="120" step="1"
+                                    required>
+                                <div class="invalid-feedback">Ingresa una edad entre 1 y 120 años.</div>
                             </div>
                             <div class="col-md-3"><button class="btn btn-primary w-100" type="submit">Registrar
                                     alumno</button></div>
