@@ -25,7 +25,6 @@ AulaControl permite validar un acceso, entrar a un panel de gestión y capturar 
 5. [Proceso de creación](#proceso-de-creación)
 6. [Capturas del flujo completo](#capturas-del-flujo-completo)
 7. [Ejecución y GitHub Pages](#ejecución-y-github-pages)
-8. [Participación del equipo](#participación-del-equipo)
 
 ---
 
