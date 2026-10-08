@@ -42,16 +42,16 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#studentForm").addEventListener("submit", (event) => {
     event.preventDefault();
     const name = document.querySelector("#studentName");
-    const age = document.querySelector("#studentAge");
+    const birthDate = document.querySelector("#birthDate");
     const validName = name.value.trim().length > 0;
     const validNumber = validarNumeroControl(controlNumber.value);
-    const validAge = validarEdad(age.value);
+    const validBirthDate = validarFechaNacimiento(birthDate.value);
     name.classList.toggle("is-invalid", !validName);
     controlNumber.classList.toggle("is-invalid", !validNumber);
-    age.classList.toggle("is-invalid", !validAge);
-    if (!validName || !validNumber || !validAge) return;
+    birthDate.classList.toggle("is-invalid", !validBirthDate);
+    if (!validName || !validNumber || !validBirthDate) return;
 
-    const adult = Number(age.value) >= 18;
+    const adult = calcularEdad(birthDate.value) >= 18;
     document.querySelector("#ageModalTitle").textContent = adult ? "Mayor de edad" : "Menor de edad";
     document.querySelector("#ageModalMessage").textContent = `${name.value.trim()} fue registrado correctamente.`;
     bootstrap.Modal.getOrCreateInstance(document.querySelector("#ageModal")).show();
